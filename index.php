@@ -31,13 +31,6 @@
             } 
 
             // Stats : enregister une trace du passage dans un fichier
-                // $fic = $chemin.$id.$sta;
-                // $fp = fopen($fic, "r"); 
-                // $count = fread($fp, 1024); 
-                // fclose($fp); 
-                // $fp = fopen($sta, "w"); 
-                // fwrite($fp, $count); 
-                // fclose($fp); 
                 $fic = $chemin.$id.$sta;
                 $fp = fopen ($fic, "r+"); // w+ : ouvre et écrit, s'il n'existe pas, il le crée
                 $hits = fread ($fp, 1024);
